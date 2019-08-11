@@ -11,6 +11,49 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  background: $black;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
 }
+
+.form-editor {
+  max-width: 600px;
+  padding: 16px;
+}
+
+.header {
+  &__title {
+    font-size: 34px;
+  }
+}
+
+.button {
+  background: none;
+  border: none;
+  border-radius: 5%;
+  color: #fff;
+  height: 42px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  width: 140px;
+
+  &--delete {
+    border: 2px solid gray;
+  }
+
+  &--load {
+    margin-left: 1em;
+    border: 2px solid gray;
+  }
+
+  &--save {
+    margin-left: 1.1em;
+    border: 2px solid gray;
+  }
+}
+
+
