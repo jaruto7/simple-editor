@@ -1,22 +1,23 @@
 "use strict";
 
-// service worker registration - remove if you're not going to use it
+// Pobierz wszystkie przyciski i zapisz w zmiennych
+const textarea = document.querySelector('.header__textarea--js');
+const buttonDelete = document.querySelector('.button--delete-js');
+const buttonLoad = document.querySelector('.button--load-js');
+const buttonSave = document.querySelector('.button--save-js');
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
+buttonSave.addEventListener('click', (e) => {
+  e.preventDefault();
+  // console.log(JSON.stringify(textarea.value));
+  localStorage.setItem("textarea", textarea.value);
+});
 
-// place your code below
+buttonLoad.addEventListener('click', (e) => {
+  e.preventDefault();
+  textarea.innerHTML = localStorage.getItem("textarea", e.target.value);
+});
 
-
-console.log(`Hello world!`);
-
-
+buttonDelete.addEventListener('click', (e) => {
+  e.preventDefault();
+  localStorage.removeItem("textarea");
+});
