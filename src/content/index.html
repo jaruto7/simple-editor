@@ -24,18 +24,18 @@
 </head>
 
 <body>
-  <form class="form-editor">
-    <header class="header">
-      <h2 class="header__title">Editor message</h2>
-      <textarea class="header__textarea header__textarea--js" name="textarea" id="textarea" cols="55" rows="10" placeholder="Type your message here.
-
+  <form class="form">
+    <h1 class="form__title">Editor message</h1>
+    <p class="form__wrapper">
+      <label for="message" class="form__label">My Message</label>
+      <textarea class="form__message form__message--js" name="textarea" id="textarea" placeholder="Type your message here.
 After typing you can save, load or delete your message by pressing buttons above."></textarea>
-    </header>
-    <span class="flexButtons">
-      <button class="button button--delete button--delete-js">Delete</button>
-      <button class="button button--load button--load-js">Load</button>
-      <button class="button button--save button--save-js">Save</button>
-    </span>
+    </p>
+    <div class="form-functions">
+      <button class="form__button form__button--delete form__button--delete-js">Delete</button>
+      <button class="form__button form__button--load form__button--load-js">Load</button>
+      <button class="form__button form__button--save form__button--save-js">Save</button>
+    </div>
   </form>
 
   <script src="js/main.js"></script>
