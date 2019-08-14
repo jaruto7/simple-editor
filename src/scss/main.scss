@@ -12,7 +12,14 @@ html {
   box-sizing: inherit;
 }
 
-
+body {
+  background-color: $navy;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
 
 // [class^="button"] {
 //   background-color: inherit;
