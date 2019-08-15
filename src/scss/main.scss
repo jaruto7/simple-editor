@@ -40,7 +40,7 @@ body {
     background-color: inherit;
     background-position: 100% 0;
     background-size: 300%;
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.3) 50%, transparent 50%);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 50%, transparent 50%);
     border-radius: 4px;
     cursor: pointer;
     color: #fff;
@@ -53,20 +53,20 @@ body {
     transition: 0.6s;
 
     &--delete {
-      border: 2px solid #bc2c1a;
-      color: #bc2c1a;
+      border: 2px solid #B3B3FF;
+      color: #B3B3FF;
 
       &:hover {
-        background-color: #bc2c1a;
+        background-color: #B3B3FF;
       }
     }
 
     &--load {
-      border: 2px solid darkolivegreen;
-      color: darkolivegreen;
+      border: 2px solid #7BF178;
+      color: #7BF178;
 
       &:hover {
-        background-color: darkolivegreen;
+        background-color: #7BF178;
       }
     }
 
@@ -83,7 +83,7 @@ body {
   [class^="form__button"]:hover {
     background-position: 0 100%;
     border: 2px solid transparent;
-    color: #fff;
+    color: #000;
   }
 
   &-functional {
