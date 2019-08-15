@@ -1,6 +1,7 @@
 @import "_normalize";
 @import "_variables";
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Special+Elite&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=latin-ext');
+
 
 html {
   box-sizing: border-box;
@@ -19,6 +20,13 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+.header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 64px;
 }
 
 // [class^="button"] {
