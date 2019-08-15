@@ -346,9 +346,9 @@ body {
   background-color: inherit;
   background-position: 100% 0;
   background-size: 300%;
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.3) 50%, transparent 50%);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.3) 50%, transparent 50%);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.3) 50%, transparent 50%);
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 50%, transparent 50%);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 50%, transparent 50%);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 50%, transparent 50%);
   border-radius: 4px;
   cursor: pointer;
   color: #fff;
@@ -362,15 +362,15 @@ body {
   -o-transition: 0.6s;
   transition: 0.6s; }
   .form__button--delete {
-    border: 2px solid #bc2c1a;
-    color: #bc2c1a; }
+    border: 2px solid #B3B3FF;
+    color: #B3B3FF; }
     .form__button--delete:hover {
-      background-color: #bc2c1a; }
+      background-color: #B3B3FF; }
   .form__button--load {
-    border: 2px solid darkolivegreen;
-    color: darkolivegreen; }
+    border: 2px solid #7BF178;
+    color: #7BF178; }
     .form__button--load:hover {
-      background-color: darkolivegreen; }
+      background-color: #7BF178; }
   .form__button--save {
     border: 2px solid darkorange;
     color: darkorange; }
@@ -380,7 +380,7 @@ body {
 .form [class^="form__button"]:hover {
   background-position: 0 100%;
   border: 2px solid transparent;
-  color: #fff; }
+  color: #000; }
 
 .form-functional {
   display: -webkit-box;
