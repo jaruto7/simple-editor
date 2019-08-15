@@ -1,7 +1,7 @@
 @import "_normalize";
 @import "_variables";
 
-@import url('https://fonts.googleapis.com/css?family=Nova+Round|Open+Sans:400,600&display=swap&subset=latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Nova+Round|Open+Sans:400,600&display=swap&subset=latin-ext");
 
 html {
   box-sizing: border-box;
@@ -26,7 +26,7 @@ body {
 .header {
   font-weight: 600;
   font-size: 44px;
-  margin: 0;
+  margin: 0 0 33px 0;
 }
 
 .main {
@@ -45,13 +45,13 @@ body {
     cursor: pointer;
     color: #fff;
     font-size: 14px;
-    font-family: 'Nova Round', cursive;
+    font-family: "Nova Round", cursive;
     letter-spacing: 0.5px;
     min-width: 158px;
     padding: 16px;
     text-transform: uppercase;
-    transition: .6s;
-    
+    transition: 0.6s;
+
     &--delete {
       border: 2px solid #bc2c1a;
       color: #bc2c1a;
@@ -86,51 +86,39 @@ body {
     color: #fff;
   }
 
+  &-functional {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 33px;
+  }
+
   &__label {
     display: block;
     font-weight: 600;
     font-size: 14px;
-    font-style: normal;
     line-height: 16px;
+    line-height: 16px;
+    margin-bottom: 17px;
   }
 
   &__message {
-    border-radius: 4px;    
+    border-radius: 4px;
     background: rgba(255, 255, 255, 0.1);
     border: none;
     color: rgb(182, 179, 179);
     min-height: 211px;
     outline: none;
+    padding: 4px;
     -webkit-box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.5);
     width: 100%;
   }
+
+  &__wrapper {
+    margin: 0;
+  }
+
+  ::placeholder {
+    color: rgb(182, 179, 179);
+  }
 }
-
-// // .header__textarea {
-// //   background: rgba(255, 255, 255, 0.1);
-// //   border: none;
-// //   color: rgb(182, 179, 179);
-// //   outline: none;
-// //   -webkit-box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.5);
-// //   box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.5);
-// // }
-
-// ::placeholder {
-//   color: rgb(182, 179, 179);
-// }
-
-// @media (max-width: 500px) {
-
-//   // .button {
-//   //   font-size: 11px;
-//   //   // height : 22px;
-//   //   width: 30%;
-//   //   padding: 5px 0 2px;
-//   //   margin-top: 8px;
-//   // }
-
-//   ::placeholder {
-//     font-size: 13px;
-//   }
-// }
