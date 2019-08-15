@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Michroma|Open+Sans:400,700&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -310,7 +310,8 @@ template {
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; }
 
 *,
 *:before,
@@ -319,117 +320,132 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #182825;
+  background-color: #182825;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100vh; }
 
-.form-editor {
-  max-width: 600px;
-  padding: 16px; }
+.header {
+  font-weight: 600;
+  font-size: 44px;
+  margin: 0 0 33px 0; }
 
-.header__title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 28px;
-  text-transform: uppercase; }
+.main {
+  max-width: 540px;
+  width: 100%; }
 
-.flexButtons {
+.form__button {
+  background-color: inherit;
+  background-position: 100% 0;
+  background-size: 300%;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.3) 50%, transparent 50%);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.3) 50%, transparent 50%);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.3) 50%, transparent 50%);
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Michroma', sans-serif;
+  letter-spacing: 0.5px;
+  min-width: 158px;
+  padding: 16px;
+  text-transform: uppercase;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s; }
+  .form__button--delete {
+    border: 2px solid #bc2c1a;
+    color: #bc2c1a; }
+    .form__button--delete:hover {
+      background-color: #bc2c1a; }
+  .form__button--load {
+    border: 2px solid darkolivegreen;
+    color: darkolivegreen; }
+    .form__button--load:hover {
+      background-color: darkolivegreen; }
+  .form__button--save {
+    border: 2px solid darkorange;
+    color: darkorange; }
+    .form__button--save:hover {
+      background-color: darkorange; }
+
+.form [class^="form__button"]:hover {
+  background-position: 0 100%;
+  border: 2px solid transparent;
+  color: #fff; }
+
+.form-functional {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  margin-top: 33px; }
 
-[class^="button"] {
-  background-color: inherit;
-  background-position: 100% 0;
-  background-size: 300%;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  -webkit-transition: .8s;
-  -o-transition: .8s;
-  transition: .8s; }
+.form__label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  line-height: 16px;
+  margin-bottom: 17px; }
 
-[class^="button"]:hover {
-  background-position: 0 100%; }
-
-.button {
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.3) 50%, transparent 50%);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.3) 50%, transparent 50%);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.3) 50%, transparent 50%);
-  color: rgba(255, 255, 255, 0.3);
-  border-radius: 5%;
-  font-family: 'Special Elite', cursive;
-  margin-top: 18px;
-  padding: 14px 0 10px;
-  text-transform: uppercase;
-  width: 30%; }
-  .button--delete {
-    border: 2px solid #BC2C1A;
-    color: #BC2C1A; }
-    .button--delete:hover {
-      background-color: #BC2C1A;
-      border: none;
-      color: #fff; }
-  .button--load {
-    border: 2px solid darkolivegreen;
-    color: darkolivegreen; }
-    .button--load:hover {
-      color: #fff;
-      border: none;
-      background-color: darkolivegreen; }
-  .button--save {
-    color: darkorange;
-    border: 2px solid darkorange; }
-    .button--save:hover {
-      color: #fff;
-      border: none;
-      background-color: darkorange; }
-
-.header__textarea {
+.form__message {
+  border-radius: 4px;
   background: rgba(255, 255, 255, 0.1);
   border: none;
   color: #b6b3b3;
+  min-height: 211px;
   outline: none;
+  padding: 4px;
   -webkit-box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.5);
+  width: 100%; }
 
-::-webkit-input-placeholder {
+.form__wrapper {
+  margin: 0; }
+
+.form ::-webkit-input-placeholder {
   color: #b6b3b3; }
 
-::-moz-placeholder {
+.form ::-moz-placeholder {
   color: #b6b3b3; }
 
-:-ms-input-placeholder {
+.form :-ms-input-placeholder {
   color: #b6b3b3; }
 
-::-ms-input-placeholder {
+.form ::-ms-input-placeholder {
   color: #b6b3b3; }
 
-::placeholder {
+.form ::placeholder {
   color: #b6b3b3; }
 
 @media (max-width: 500px) {
-  .header__title {
-    font-size: 16px; }
-  .header__textarea {
+  .main {
+    max-width: 180px; }
+  .header {
+    font-size: 16px;
+    margin: 0 0 10px 0; }
+  .form__button {
+    font-size: 8px;
+    padding: 5px 5px;
+    min-width: 5px; }
+  .form-functional {
+    margin: 7px 0 0 0; }
+  .form__label {
+    margin-bottom: 7px;
+    font-size: 12px; }
+  .form__message {
     width: 180px; }
-  .button {
-    font-size: 11px;
-    width: 30%;
-    padding: 5px 0 2px;
-    margin-top: 8px; }
   ::-webkit-input-placeholder {
     font-size: 13px; }
   ::-moz-placeholder {
