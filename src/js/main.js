@@ -1,8 +1,8 @@
 // Pobierz wszystkie przyciski i inne elementy, i zapisz je w zmiennych
-const textarea = document.querySelector('.header__textarea--js');
-const buttonDelete = document.querySelector('.button--delete-js');
-const buttonLoad = document.querySelector('.button--load-js');
-const buttonSave = document.querySelector('.button--save-js');
+const textarea = document.querySelector('.form__message--js');
+const buttonDelete = document.querySelector('.form__button--delete-js');
+const buttonLoad = document.querySelector('.form__button--load-js');
+const buttonSave = document.querySelector('.form__button--save-js');
 
 // Nasłuchuj zdarzenie na kliknięcie przycisku Save przez użytkownika
 buttonSave.addEventListener('click', (e) => {

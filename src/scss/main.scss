@@ -24,10 +24,14 @@ body {
 }
 
 .header {
-  font-style: normal;
   font-weight: 600;
   font-size: 44px;
-  line-height: 64px;
+  margin: 0;
+}
+
+.main {
+  max-width: 540px;
+  width: 100%;
 }
 
 .form {
@@ -40,7 +44,11 @@ body {
     line-height: 16px;
   }
 
-  
+  &__message {
+    width: 100%;
+    border-radius: 4px;
+    min-height: 211px;
+  }
 }
 
 // [class^="button"] {
