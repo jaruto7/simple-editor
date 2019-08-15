@@ -5,6 +5,7 @@
 
 html {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 *,
@@ -27,6 +28,19 @@ body {
   font-weight: 600;
   font-size: 44px;
   line-height: 64px;
+}
+
+.form {
+
+  &__label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 16px;
+  }
+
+  
 }
 
 // [class^="button"] {
