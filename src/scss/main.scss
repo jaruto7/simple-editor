@@ -1,7 +1,8 @@
 @import "_normalize";
 @import "_variables";
 
-@import url("https://fonts.googleapis.com/css?family=Nova+Round|Open+Sans:400,600&display=swap&subset=latin-ext");
+@import url('https://fonts.googleapis.com/css?family=Michroma|Open+Sans:400,700&display=swap&subset=latin-ext');
+
 
 html {
   box-sizing: border-box;
@@ -44,7 +45,7 @@ body {
     cursor: pointer;
     color: #fff;
     font-size: 14px;
-    font-family: "Nova Round", cursive;
+    font-family: 'Michroma', sans-serif;
     letter-spacing: 0.5px;
     min-width: 158px;
     padding: 16px;
@@ -136,7 +137,7 @@ body {
 
     &__button {
       font-size: 8px;
-      padding: 5px 11px;
+      padding: 5px 5px;
       min-width: 5px;
     }
 
